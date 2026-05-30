@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Isle Works – 3D Portfolio</title>
+
+<script type="module"
+src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js">
+</script>
+
+<style>
+
+body{
+margin:0;
+font-family:Barlow;
+background:#ffffff;
+color:black;
+}
+
+header{
+text-align:center;
+padding:40px 20px;
+}
+
+h1{
+margin:0;
+font-size:32px;
+letter-spacing:1px;
+}
+
+p{
+opacity:0.7;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:#f0f0f5;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(132, 131, 131, 0.4);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.thumb{
+width:100%;
+height:200px;
+object-fit:cover;
+display:block;
+background:#f0f0f5;
+}
+
+.content{
+padding:15px;
+}
+
+.title{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.button{
+display:inline-block;
+padding:10px 14px;
+margin-top:10px;
+background:#bcb3cb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:14px;
+}
+
+.button:hover{
+background:#a89eb6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+</header>
+
+<header>
+<h1>The Isle Works – 3D Portfolio</h1>
+<p>Select a model to explore - drift through its forms, pause on its details or bring it into your space with AR.</p>
+</header>
+
+<div class="grid">
+
+<!-- CARD 1 -->
+<div class="card">
+<img class="thumb" src="thumbs/pre_prototype_thumb.png">
+<div class="content">
+<div class="title">Pre Prototype</div>
+<a class="button" href="the_isle_00_pre_prototype.html">Explore Model</a>
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+<img class="thumb" src="thumbs/the_element_thumb.png">
+<div class="content">
+<div class="title">Element</div>
+<a class="button" href="the_isle_03_element.html">Explore Model</a>
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+<img class="thumb" src="thumbs/03_thumb.png">
+<div class="content">
+<div class="title">The Isle 03</div>
+<a class="button" href="the_isle_03.html">Explore Model</a>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
