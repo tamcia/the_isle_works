@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="module"
+src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js">
+</script>
+
+<style>
+body{margin:0;}
+
+#loading{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+font-family:'Barlow', sans-serif;
+font-size:18px;
+color:rgb(0, 0, 0);
+text-align:center;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:0.4;}
+50%{opacity:1;}
+100%{opacity:0.4;}
+}
+
+model-viewer{
+width:100vw;
+height:100vh;
+}
+model-viewer::part(default-progress-bar){
+display:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="loading">Loading Pre-Prototype...</div>
+
+<model-viewer
+src="models/The_Isle_00_pre_prototype.glb"
+ios-src="models/The_Isle_00_pre_prototype.usdz"
+ar
+ar-modes="webxr scene-viewer quick-look"
+camera-controls
+auto-rotate>
+
+<button slot="ar-button">View in AR</button>
+
+</model-viewer>
+
+<script>
+document.querySelector("model-viewer")
+.addEventListener("load",()=>{
+document.getElementById("loading").style.display="none";
+});
+</script>
+
+</body>
+</html>
